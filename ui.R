@@ -28,8 +28,21 @@ body <- dashboardBody(
     tags$link(rel = "stylesheet", type = "text/css", href = "AdminLTE-2.0.6/_all-skins.min.css"),
     tags$link(rel = "stylesheet", type = "text/css", href = "shinydashboard-0.5.1/shinydashboard.css"),
     tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
-    
+  ),
+  
+  # landingPage
+  div(id = "landingPage",
+      landingPageUI("landing")),
+  
+  # Login form
+  div(id = "loginPage",
+      loginUI("register")),
+  
+  # Registration form
+  div(id = "registerPage",
+      registrationUI("register")
   )
+
 )
 
 ###################################

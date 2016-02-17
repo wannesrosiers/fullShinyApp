@@ -17,8 +17,8 @@ applicationTitle <- "Test application"
 # Widths
 ##############
 
-titleWidth   <- 250
-sidebarWidth <- 250
+titleWidth    <- 250
+sidebarWidth  <- 250
 
 ##################
 # Tab labels
@@ -28,6 +28,9 @@ sidebarWidth <- 250
 # Buttons
 #############
 
+registerButton <- "Register"
+loginButton    <- "Log in"
+
 ###########################
 # Accompanying textes
 ###########################
@@ -35,6 +38,14 @@ sidebarWidth <- 250
 #############
 # Widgets
 #############
+
+nameWidget   <- "Name"
+adressWidget <- "Adress"
+emailWidget  <- "E-mail"
+rizivWidget  <- "Riziv number"
+
+userNameWidget <- "Username"
+passwordWidget <- "Password"
 
 ################
 # Box labels
