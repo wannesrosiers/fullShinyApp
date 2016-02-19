@@ -20,3 +20,13 @@ for (nm in list.files("uiScripts")) {
 for (nm in list.files("serverScripts")) {
   source(file.path("serverScripts", nm))
 }
+
+#####################
+# SQL connections
+#####################
+# killDbConnections()
+# connect       <- dbConnect(dbDriver("MySQL"), 
+#                            user = 'root', 
+#                            password = 'bur-ba',
+#                            host = 'localhost',
+#                            dbname = 'full_application')

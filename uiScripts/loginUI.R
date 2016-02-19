@@ -5,17 +5,21 @@ loginUI <- function(id){
   # Two action buttons
   fluidPage(
     fluidRow(textInput(ns("userName"),
-                       label = userNameWidget,
-                       width = "300px")),
-    
-    fluidRow(passwordInput(ns("password"),
-                           label = passwordWidget,
-                           width = "300px")),
+                       label       = NULL,
+                       width       = userInputWidth,
+                       placeholder = userNameWidget)),
+
+    fluidRow(div(class = "form-group shiny-input-container",
+                 style = userInputStyleWidth,
+                 tags$input(id          = ns("password"),
+                            type        = "password",
+                            class       = "form-control shinyjs-resettable shiny-bound-input",
+                            placeholder = passwordPlaceHolder))),
     
     fluidRow(actionButton(ns("login"), 
-                          label = loginButton, 
+                          label      = loginButton, 
                           styleclass = "danger",
-                          style = "width:300px;")),
+                          style      = userInputStyleWidth)),
     
     align = "center"
   )

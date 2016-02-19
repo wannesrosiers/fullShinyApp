@@ -36,7 +36,7 @@ body <- dashboardBody(
   
   # Login form
   div(id = "loginPage",
-      loginUI("register")),
+      loginUI("login")),
   
   # Registration form
   div(id = "registerPage",

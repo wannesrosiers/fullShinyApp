@@ -17,8 +17,10 @@ applicationTitle <- "Test application"
 # Widths
 ##############
 
-titleWidth    <- 250
-sidebarWidth  <- 250
+titleWidth          <- 250
+sidebarWidth        <- 250
+userInputWidth      <- "300px"
+userInputStyleWidth <- "width: 300px;"
 
 ##################
 # Tab labels
@@ -45,7 +47,8 @@ emailWidget  <- "E-mail"
 rizivWidget  <- "Riziv number"
 
 userNameWidget <- "Username"
-passwordWidget <- "Password"
+passwordPlaceHolder <- "Password"
+confirmPlaceHolder  <- "Confirm your password"
 
 ################
 # Box labels
