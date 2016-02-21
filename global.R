@@ -24,9 +24,9 @@ for (nm in list.files("serverScripts")) {
 #####################
 # SQL connections
 #####################
-# killDbConnections()
-# connect       <- dbConnect(dbDriver("MySQL"), 
-#                            user = 'root', 
-#                            password = 'bur-ba',
-#                            host = 'localhost',
-#                            dbname = 'full_application')
+killDbConnections()
+connect <- dbConnect(dbDriver("MySQL"),
+                     user = 'root',
+                     password = 'bur-ba',
+                     host = 'localhost',
+                     dbname = 'full_application')

@@ -10,3 +10,6 @@ library(shinysky)
 
 # Charts
 library(rCharts)
+
+# MySQL library
+library(RMySQL)

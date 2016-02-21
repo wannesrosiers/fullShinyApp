@@ -8,6 +8,8 @@ loginUI <- function(id){
                        label       = NULL,
                        width       = userInputWidth,
                        placeholder = userNameWidget)),
+    
+    fluidRow(uiOutput(ns("incorrectUserName"))),
 
     fluidRow(div(class = "form-group shiny-input-container",
                  style = userInputStyleWidth,
@@ -15,6 +17,8 @@ loginUI <- function(id){
                             type        = "password",
                             class       = "form-control shinyjs-resettable shiny-bound-input",
                             placeholder = passwordPlaceHolder))),
+    
+    fluidRow(uiOutput(ns("incorrectCombination"))),
     
     fluidRow(actionButton(ns("login"), 
                           label      = loginButton, 

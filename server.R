@@ -21,4 +21,13 @@ shinyServer(function(input, output, session) {
   # Sidebar
   ###############
   
+  ###############
+  # Body
+  ###############
+  
+  observe({
+    callModule(registrationServer, "register", id = "register")
+    callModule(loginServer, "login", id = "login")
+  })
+  
 })

@@ -8,21 +8,29 @@ registrationUI <- function(id){
                        label       = NULL,
                        width       = userInputWidth,
                        placeholder = nameWidget)),
+    
+    fluidRow(uiOutput(ns("incorrectUserName"))),
       
     fluidRow(textInput(ns("adress"),
                        label       = NULL,
                        width       = userInputWidth,
                        placeholder = adressWidget)),
+    
+    fluidRow(uiOutput(ns("incorrectAdress"))),
       
     fluidRow(textInput(ns("email"), 
                        label       = NULL, 
                        width       = userInputWidth,
                        placeholder = emailWidget)),
+    
+    fluidRow(uiOutput(ns("incorrectEmail"))),
       
     fluidRow(textInput(ns("rizivNumber"), 
                        label       = NULL, 
                        width       = userInputWidth,
                        placeholder = rizivWidget)),
+    
+    fluidRow(uiOutput(ns("incorrectRizivNumber"))),
     
     fluidRow(div(class = "form-group shiny-input-container",
                  style = userInputStyleWidth,
@@ -37,6 +45,8 @@ registrationUI <- function(id){
                             type        = "password",
                             class       = "form-control shinyjs-resettable shiny-bound-input",
                             placeholder = confirmPlaceHolder))),
+    
+    fluidRow(uiOutput(ns("incorrectPassword"))),
     
     fluidRow(actionButton(ns("register"), 
                           label      = registerButton, 
